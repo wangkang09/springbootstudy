@@ -1,0 +1,7 @@
+# banner设置
+spring.banner.location=banner.txt
+spring.main.banner-mode=console
+
+spring.application.name=banner-study
+
+server.port=8080

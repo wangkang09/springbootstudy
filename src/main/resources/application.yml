@@ -1,0 +1,7 @@
+spring:
+  quartz:
+    auto-startup: true
+
+  datasource:
+    url: http//
+    username: www

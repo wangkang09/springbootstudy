@@ -1,0 +1,76 @@
+2019-01-07 15:39:50  [ background-preinit:14 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.13.Final
+2019-01-07 15:39:50  [ main:155 ] - [ INFO ]  Starting SpringBootLogApplication on PC-20180521MXYH with PID 7444 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-log\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2019-01-07 15:39:50  [ main:155 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2019-01-07 15:39:52  [ main:1975 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2019-01-07 15:39:52  [ main:2073 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1886 ms
+2019-01-07 15:39:52  [ main:2313 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 15:39:52  [ main:2501 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-07 15:39:52  [ main:2503 ] - [ INFO ]  Started SpringBootLogApplication in 2.594 seconds (JVM running for 2.939)
+2019-01-07 15:42:59  [ http-nio-8080-exec-6:189511 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2019-01-07 15:42:59  [ http-nio-8080-exec-6:189515 ] - [ INFO ]  Completed initialization in 4 ms
+2019-01-07 15:42:59  [ http-nio-8080-exec-6:189530 ] - [ ERROR ]  error-log1
+2019-01-07 15:42:59  [ http-nio-8080-exec-6:189533 ] - [ INFO ]  info-log1
+2019-01-07 15:42:59  [ http-nio-8080-exec-6:189533 ] - [ WARN ]  warn-log1
+2019-01-07 15:43:30  [ background-preinit:51 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.13.Final
+2019-01-07 15:43:30  [ main:181 ] - [ INFO ]  Starting SpringBootLogApplication on PC-20180521MXYH with PID 7336 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-log\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2019-01-07 15:43:30  [ main:182 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2019-01-07 15:43:32  [ main:1862 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2019-01-07 15:43:32  [ main:1951 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1737 ms
+2019-01-07 15:43:32  [ main:2151 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 15:43:32  [ main:2345 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-07 15:43:32  [ main:2347 ] - [ INFO ]  Started SpringBootLogApplication in 2.438 seconds (JVM running for 2.776)
+2019-01-07 15:44:00  [ http-nio-8080-exec-2:29572 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2019-01-07 15:44:00  [ http-nio-8080-exec-2:29576 ] - [ INFO ]  Completed initialization in 4 ms
+2019-01-07 15:44:00  [ http-nio-8080-exec-2:29592 ] - [ ERROR ]  error-log1
+2019-01-07 15:44:00  [ http-nio-8080-exec-2:29593 ] - [ INFO ]  info-log1
+2019-01-07 15:44:00  [ http-nio-8080-exec-2:29593 ] - [ WARN ]  warn-log1
+2019-01-07 15:44:23  [ background-preinit:14 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.13.Final
+2019-01-07 15:44:23  [ main:167 ] - [ INFO ]  Starting SpringBootLogApplication on PC-20180521MXYH with PID 8144 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-log\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2019-01-07 15:44:23  [ main:168 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2019-01-07 15:44:25  [ main:1848 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2019-01-07 15:44:25  [ main:1944 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1744 ms
+2019-01-07 15:44:25  [ main:2149 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 15:44:25  [ main:2319 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-07 15:44:25  [ main:2321 ] - [ INFO ]  Started SpringBootLogApplication in 2.419 seconds (JVM running for 2.751)
+2019-01-07 15:46:43  [ background-preinit:11 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.13.Final
+2019-01-07 15:46:44  [ main:201 ] - [ INFO ]  Starting SpringBootLogApplication on PC-20180521MXYH with PID 9656 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-log\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2019-01-07 15:46:44  [ main:201 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2019-01-07 15:46:45  [ main:2040 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2019-01-07 15:46:45  [ main:2153 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1892 ms
+2019-01-07 15:46:46  [ main:2382 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 15:46:46  [ main:2560 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-07 15:46:46  [ main:2562 ] - [ INFO ]  Started SpringBootLogApplication in 2.641 seconds (JVM running for 3.038)
+2019-01-07 15:48:25  [ http-nio-8080-exec-2:102148 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2019-01-07 15:48:25  [ http-nio-8080-exec-2:102153 ] - [ INFO ]  Completed initialization in 5 ms
+2019-01-07 15:48:25  [ http-nio-8080-exec-2:102168 ] - [ ERROR ]  error-log1
+2019-01-07 15:48:25  [ http-nio-8080-exec-2:102168 ] - [ INFO ]  info-log1
+2019-01-07 15:48:25  [ http-nio-8080-exec-2:102168 ] - [ WARN ]  warn-log1
+2019-01-07 15:49:23  [ background-preinit:12 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.13.Final
+2019-01-07 15:49:23  [ main:223 ] - [ INFO ]  Starting SpringBootLogApplication on PC-20180521MXYH with PID 7324 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-log\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2019-01-07 15:49:23  [ main:224 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2019-01-07 15:49:25  [ main:1910 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2019-01-07 15:49:25  [ main:2169 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1903 ms
+2019-01-07 15:49:26  [ main:2352 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 15:49:26  [ main:2544 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-07 15:49:26  [ main:2547 ] - [ INFO ]  Started SpringBootLogApplication in 2.624 seconds (JVM running for 3.004)
+2019-01-07 15:49:29  [ http-nio-8080-exec-1:5962 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2019-01-07 15:49:29  [ http-nio-8080-exec-1:5966 ] - [ INFO ]  Completed initialization in 4 ms
+2019-01-07 15:49:29  [ http-nio-8080-exec-1:5981 ] - [ ERROR ]  error-log1
+2019-01-07 15:49:29  [ http-nio-8080-exec-1:5981 ] - [ INFO ]  info-log1
+2019-01-07 15:49:29  [ http-nio-8080-exec-1:5981 ] - [ WARN ]  warn-log1
+2019-01-07 15:54:30  [ background-preinit:14 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.13.Final
+2019-01-07 15:54:30  [ main:147 ] - [ INFO ]  Starting SpringBootLogApplication on PC-20180521MXYH with PID 9196 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-log\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2019-01-07 15:54:30  [ main:148 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2019-01-07 15:54:31  [ main:1849 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2019-01-07 15:54:31  [ main:1946 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1754 ms
+2019-01-07 15:54:32  [ main:2165 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 15:54:32  [ main:2336 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-07 15:54:32  [ main:2339 ] - [ INFO ]  Started SpringBootLogApplication in 2.42 seconds (JVM running for 2.78)
+2019-01-07 16:03:41  [ background-preinit:15 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.13.Final
+2019-01-07 16:03:41  [ main:190 ] - [ INFO ]  Starting SpringBootLogApplication on PC-20180521MXYH with PID 10236 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-log\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2019-01-07 16:03:41  [ main:197 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2019-01-07 16:03:43  [ main:2234 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2019-01-07 16:03:43  [ main:2348 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2085 ms
+2019-01-07 16:03:44  [ main:2542 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 16:03:44  [ main:2718 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-07 16:03:44  [ main:2721 ] - [ INFO ]  Started SpringBootLogApplication in 2.811 seconds (JVM running for 3.165)

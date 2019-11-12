@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangkang.mapper.PriceWarningMapper">
+  <resultMap id="BaseResultMap" type="com.wangkang.entity.PriceWarning">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="product_code" jdbcType="CHAR" property="productCode" />
+    <result column="item_key" jdbcType="VARCHAR" property="itemKey" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="product_level" jdbcType="VARCHAR" property="productLevel" />
+    <result column="site" jdbcType="VARCHAR" property="site" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+    <result column="cost" jdbcType="DECIMAL" property="cost" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="price_cny" jdbcType="VARCHAR" property="priceCny" />
+    <result column="price_type" jdbcType="BIT" property="priceType" />
+    <result column="profit_rate" jdbcType="DECIMAL" property="profitRate" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="insert_time" jdbcType="TIMESTAMP" property="insertTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="is_activity" jdbcType="VARCHAR" property="isActivity" />
+    <result column="activity_note" jdbcType="VARCHAR" property="activityNote" />
+    <result column="activity_start_time" jdbcType="TIMESTAMP" property="activityStartTime" />
+    <result column="activity_end_time" jdbcType="TIMESTAMP" property="activityEndTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, product_code, item_key, type, product_level, site, channel, cost, price, price_cny, 
+    price_type, profit_rate, status, insert_time, last_update_time, is_activity, activity_note, 
+    activity_start_time, activity_end_time
+  </sql>
+  <select id="selectByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.wangkang.entity.PriceWarningExample">
+    delete from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning (id, product_code, item_key, 
+      type, product_level, site, 
+      channel, cost, price, 
+      price_cny, price_type, profit_rate, 
+      status, insert_time, last_update_time, 
+      is_activity, activity_note, activity_start_time, 
+      activity_end_time)
+    values (#{id,jdbcType=INTEGER}, #{productCode,jdbcType=CHAR}, #{itemKey,jdbcType=VARCHAR}, 
+      #{type,jdbcType=CHAR}, #{productLevel,jdbcType=VARCHAR}, #{site,jdbcType=VARCHAR}, 
+      #{channel,jdbcType=VARCHAR}, #{cost,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL}, 
+      #{priceCny,jdbcType=VARCHAR}, #{priceType,jdbcType=BIT}, #{profitRate,jdbcType=DECIMAL}, 
+      #{status,jdbcType=BIT}, #{insertTime,jdbcType=TIMESTAMP}, #{lastUpdateTime,jdbcType=TIMESTAMP}, 
+      #{isActivity,jdbcType=VARCHAR}, #{activityNote,jdbcType=VARCHAR}, #{activityStartTime,jdbcType=TIMESTAMP}, 
+      #{activityEndTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="productCode != null">
+        product_code,
+      </if>
+      <if test="itemKey != null">
+        item_key,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="productLevel != null">
+        product_level,
+      </if>
+      <if test="site != null">
+        site,
+      </if>
+      <if test="channel != null">
+        channel,
+      </if>
+      <if test="cost != null">
+        cost,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="priceCny != null">
+        price_cny,
+      </if>
+      <if test="priceType != null">
+        price_type,
+      </if>
+      <if test="profitRate != null">
+        profit_rate,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="insertTime != null">
+        insert_time,
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time,
+      </if>
+      <if test="isActivity != null">
+        is_activity,
+      </if>
+      <if test="activityNote != null">
+        activity_note,
+      </if>
+      <if test="activityStartTime != null">
+        activity_start_time,
+      </if>
+      <if test="activityEndTime != null">
+        activity_end_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="productCode != null">
+        #{productCode,jdbcType=CHAR},
+      </if>
+      <if test="itemKey != null">
+        #{itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=CHAR},
+      </if>
+      <if test="productLevel != null">
+        #{productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="site != null">
+        #{site,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null">
+        #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="cost != null">
+        #{cost,jdbcType=DECIMAL},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="priceCny != null">
+        #{priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="priceType != null">
+        #{priceType,jdbcType=BIT},
+      </if>
+      <if test="profitRate != null">
+        #{profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=BIT},
+      </if>
+      <if test="insertTime != null">
+        #{insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateTime != null">
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isActivity != null">
+        #{isActivity,jdbcType=VARCHAR},
+      </if>
+      <if test="activityNote != null">
+        #{activityNote,jdbcType=VARCHAR},
+      </if>
+      <if test="activityStartTime != null">
+        #{activityStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="activityEndTime != null">
+        #{activityEndTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultType="java.lang.Long">
+    select count(*) from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update ma_price_warning
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.productCode != null">
+        product_code = #{record.productCode,jdbcType=CHAR},
+      </if>
+      <if test="record.itemKey != null">
+        item_key = #{record.itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=CHAR},
+      </if>
+      <if test="record.productLevel != null">
+        product_level = #{record.productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.site != null">
+        site = #{record.site,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channel != null">
+        channel = #{record.channel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cost != null">
+        cost = #{record.cost,jdbcType=DECIMAL},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=DECIMAL},
+      </if>
+      <if test="record.priceCny != null">
+        price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="record.priceType != null">
+        price_type = #{record.priceType,jdbcType=BIT},
+      </if>
+      <if test="record.profitRate != null">
+        profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=BIT},
+      </if>
+      <if test="record.insertTime != null">
+        insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.lastUpdateTime != null">
+        last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.isActivity != null">
+        is_activity = #{record.isActivity,jdbcType=VARCHAR},
+      </if>
+      <if test="record.activityNote != null">
+        activity_note = #{record.activityNote,jdbcType=VARCHAR},
+      </if>
+      <if test="record.activityStartTime != null">
+        activity_start_time = #{record.activityStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.activityEndTime != null">
+        activity_end_time = #{record.activityEndTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update ma_price_warning
+    set id = #{record.id,jdbcType=INTEGER},
+      product_code = #{record.productCode,jdbcType=CHAR},
+      item_key = #{record.itemKey,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=CHAR},
+      product_level = #{record.productLevel,jdbcType=VARCHAR},
+      site = #{record.site,jdbcType=VARCHAR},
+      channel = #{record.channel,jdbcType=VARCHAR},
+      cost = #{record.cost,jdbcType=DECIMAL},
+      price = #{record.price,jdbcType=DECIMAL},
+      price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      price_type = #{record.priceType,jdbcType=BIT},
+      profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      status = #{record.status,jdbcType=BIT},
+      insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP},
+      is_activity = #{record.isActivity,jdbcType=VARCHAR},
+      activity_note = #{record.activityNote,jdbcType=VARCHAR},
+      activity_start_time = #{record.activityStartTime,jdbcType=TIMESTAMP},
+      activity_end_time = #{record.activityEndTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <resultMap id="BaseResultMap" type="com.wangkang.entity.PriceWarning">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="product_code" jdbcType="CHAR" property="productCode" />
+    <result column="item_key" jdbcType="VARCHAR" property="itemKey" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="product_level" jdbcType="VARCHAR" property="productLevel" />
+    <result column="site" jdbcType="VARCHAR" property="site" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+    <result column="cost" jdbcType="DECIMAL" property="cost" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="price_cny" jdbcType="VARCHAR" property="priceCny" />
+    <result column="price_type" jdbcType="BIT" property="priceType" />
+    <result column="profit_rate" jdbcType="DECIMAL" property="profitRate" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="insert_time" jdbcType="TIMESTAMP" property="insertTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="is_activity" jdbcType="BIT" property="isActivity" />
+    <result column="activity_note" jdbcType="VARCHAR" property="activityNote" />
+    <result column="activity_start_time" jdbcType="TIMESTAMP" property="activityStartTime" />
+    <result column="activity_end_time" jdbcType="TIMESTAMP" property="activityEndTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, product_code, item_key, type, product_level, site, channel, cost, price, price_cny, 
+    price_type, profit_rate, status, insert_time, last_update_time, is_activity, activity_note, 
+    activity_start_time, activity_end_time
+  </sql>
+  <select id="selectByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.wangkang.entity.PriceWarningExample">
+    delete from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning (id, product_code, item_key, 
+      type, product_level, site, 
+      channel, cost, price, 
+      price_cny, price_type, profit_rate, 
+      status, insert_time, last_update_time, 
+      is_activity, activity_note, activity_start_time, 
+      activity_end_time)
+    values (#{id,jdbcType=INTEGER}, #{productCode,jdbcType=CHAR}, #{itemKey,jdbcType=VARCHAR}, 
+      #{type,jdbcType=CHAR}, #{productLevel,jdbcType=VARCHAR}, #{site,jdbcType=VARCHAR}, 
+      #{channel,jdbcType=VARCHAR}, #{cost,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL}, 
+      #{priceCny,jdbcType=VARCHAR}, #{priceType,jdbcType=BIT}, #{profitRate,jdbcType=DECIMAL}, 
+      #{status,jdbcType=BIT}, #{insertTime,jdbcType=TIMESTAMP}, #{lastUpdateTime,jdbcType=TIMESTAMP}, 
+      #{isActivity,jdbcType=BIT}, #{activityNote,jdbcType=VARCHAR}, #{activityStartTime,jdbcType=TIMESTAMP}, 
+      #{activityEndTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="productCode != null">
+        product_code,
+      </if>
+      <if test="itemKey != null">
+        item_key,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="productLevel != null">
+        product_level,
+      </if>
+      <if test="site != null">
+        site,
+      </if>
+      <if test="channel != null">
+        channel,
+      </if>
+      <if test="cost != null">
+        cost,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="priceCny != null">
+        price_cny,
+      </if>
+      <if test="priceType != null">
+        price_type,
+      </if>
+      <if test="profitRate != null">
+        profit_rate,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="insertTime != null">
+        insert_time,
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time,
+      </if>
+      <if test="isActivity != null">
+        is_activity,
+      </if>
+      <if test="activityNote != null">
+        activity_note,
+      </if>
+      <if test="activityStartTime != null">
+        activity_start_time,
+      </if>
+      <if test="activityEndTime != null">
+        activity_end_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="productCode != null">
+        #{productCode,jdbcType=CHAR},
+      </if>
+      <if test="itemKey != null">
+        #{itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=CHAR},
+      </if>
+      <if test="productLevel != null">
+        #{productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="site != null">
+        #{site,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null">
+        #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="cost != null">
+        #{cost,jdbcType=DECIMAL},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="priceCny != null">
+        #{priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="priceType != null">
+        #{priceType,jdbcType=BIT},
+      </if>
+      <if test="profitRate != null">
+        #{profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=BIT},
+      </if>
+      <if test="insertTime != null">
+        #{insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateTime != null">
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isActivity != null">
+        #{isActivity,jdbcType=BIT},
+      </if>
+      <if test="activityNote != null">
+        #{activityNote,jdbcType=VARCHAR},
+      </if>
+      <if test="activityStartTime != null">
+        #{activityStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="activityEndTime != null">
+        #{activityEndTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultType="java.lang.Long">
+    select count(*) from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update ma_price_warning
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.productCode != null">
+        product_code = #{record.productCode,jdbcType=CHAR},
+      </if>
+      <if test="record.itemKey != null">
+        item_key = #{record.itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=CHAR},
+      </if>
+      <if test="record.productLevel != null">
+        product_level = #{record.productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.site != null">
+        site = #{record.site,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channel != null">
+        channel = #{record.channel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cost != null">
+        cost = #{record.cost,jdbcType=DECIMAL},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=DECIMAL},
+      </if>
+      <if test="record.priceCny != null">
+        price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="record.priceType != null">
+        price_type = #{record.priceType,jdbcType=BIT},
+      </if>
+      <if test="record.profitRate != null">
+        profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=BIT},
+      </if>
+      <if test="record.insertTime != null">
+        insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.lastUpdateTime != null">
+        last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.isActivity != null">
+        is_activity = #{record.isActivity,jdbcType=BIT},
+      </if>
+      <if test="record.activityNote != null">
+        activity_note = #{record.activityNote,jdbcType=VARCHAR},
+      </if>
+      <if test="record.activityStartTime != null">
+        activity_start_time = #{record.activityStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.activityEndTime != null">
+        activity_end_time = #{record.activityEndTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update ma_price_warning
+    set id = #{record.id,jdbcType=INTEGER},
+      product_code = #{record.productCode,jdbcType=CHAR},
+      item_key = #{record.itemKey,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=CHAR},
+      product_level = #{record.productLevel,jdbcType=VARCHAR},
+      site = #{record.site,jdbcType=VARCHAR},
+      channel = #{record.channel,jdbcType=VARCHAR},
+      cost = #{record.cost,jdbcType=DECIMAL},
+      price = #{record.price,jdbcType=DECIMAL},
+      price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      price_type = #{record.priceType,jdbcType=BIT},
+      profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      status = #{record.status,jdbcType=BIT},
+      insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP},
+      is_activity = #{record.isActivity,jdbcType=BIT},
+      activity_note = #{record.activityNote,jdbcType=VARCHAR},
+      activity_start_time = #{record.activityStartTime,jdbcType=TIMESTAMP},
+      activity_end_time = #{record.activityEndTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <resultMap id="BaseResultMap" type="com.wangkang.entity.PriceWarning">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="product_code" jdbcType="CHAR" property="productCode" />
+    <result column="item_key" jdbcType="VARCHAR" property="itemKey" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="product_level" jdbcType="VARCHAR" property="productLevel" />
+    <result column="site" jdbcType="VARCHAR" property="site" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+    <result column="cost" jdbcType="DECIMAL" property="cost" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="price_cny" jdbcType="VARCHAR" property="priceCny" />
+    <result column="price_type" jdbcType="BIT" property="priceType" />
+    <result column="profit_rate" jdbcType="DECIMAL" property="profitRate" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="insert_time" jdbcType="TIMESTAMP" property="insertTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="is_activity" jdbcType="BIT" property="isActivity" />
+    <result column="activity_note" jdbcType="VARCHAR" property="activityNote" />
+    <result column="activity_start_time" jdbcType="TIMESTAMP" property="activityStartTime" />
+    <result column="activity_end_time" jdbcType="TIMESTAMP" property="activityEndTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, product_code, item_key, type, product_level, site, channel, cost, price, price_cny, 
+    price_type, profit_rate, status, insert_time, last_update_time, is_activity, activity_note, 
+    activity_start_time, activity_end_time
+  </sql>
+  <select id="selectByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.wangkang.entity.PriceWarningExample">
+    delete from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning (id, product_code, item_key, 
+      type, product_level, site, 
+      channel, cost, price, 
+      price_cny, price_type, profit_rate, 
+      status, insert_time, last_update_time, 
+      is_activity, activity_note, activity_start_time, 
+      activity_end_time)
+    values (#{id,jdbcType=INTEGER}, #{productCode,jdbcType=CHAR}, #{itemKey,jdbcType=VARCHAR}, 
+      #{type,jdbcType=CHAR}, #{productLevel,jdbcType=VARCHAR}, #{site,jdbcType=VARCHAR}, 
+      #{channel,jdbcType=VARCHAR}, #{cost,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL}, 
+      #{priceCny,jdbcType=VARCHAR}, #{priceType,jdbcType=BIT}, #{profitRate,jdbcType=DECIMAL}, 
+      #{status,jdbcType=BIT}, #{insertTime,jdbcType=TIMESTAMP}, #{lastUpdateTime,jdbcType=TIMESTAMP}, 
+      #{isActivity,jdbcType=BIT}, #{activityNote,jdbcType=VARCHAR}, #{activityStartTime,jdbcType=TIMESTAMP}, 
+      #{activityEndTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="productCode != null">
+        product_code,
+      </if>
+      <if test="itemKey != null">
+        item_key,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="productLevel != null">
+        product_level,
+      </if>
+      <if test="site != null">
+        site,
+      </if>
+      <if test="channel != null">
+        channel,
+      </if>
+      <if test="cost != null">
+        cost,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="priceCny != null">
+        price_cny,
+      </if>
+      <if test="priceType != null">
+        price_type,
+      </if>
+      <if test="profitRate != null">
+        profit_rate,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="insertTime != null">
+        insert_time,
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time,
+      </if>
+      <if test="isActivity != null">
+        is_activity,
+      </if>
+      <if test="activityNote != null">
+        activity_note,
+      </if>
+      <if test="activityStartTime != null">
+        activity_start_time,
+      </if>
+      <if test="activityEndTime != null">
+        activity_end_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="productCode != null">
+        #{productCode,jdbcType=CHAR},
+      </if>
+      <if test="itemKey != null">
+        #{itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=CHAR},
+      </if>
+      <if test="productLevel != null">
+        #{productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="site != null">
+        #{site,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null">
+        #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="cost != null">
+        #{cost,jdbcType=DECIMAL},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="priceCny != null">
+        #{priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="priceType != null">
+        #{priceType,jdbcType=BIT},
+      </if>
+      <if test="profitRate != null">
+        #{profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=BIT},
+      </if>
+      <if test="insertTime != null">
+        #{insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateTime != null">
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isActivity != null">
+        #{isActivity,jdbcType=BIT},
+      </if>
+      <if test="activityNote != null">
+        #{activityNote,jdbcType=VARCHAR},
+      </if>
+      <if test="activityStartTime != null">
+        #{activityStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="activityEndTime != null">
+        #{activityEndTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultType="java.lang.Long">
+    select count(*) from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update ma_price_warning
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.productCode != null">
+        product_code = #{record.productCode,jdbcType=CHAR},
+      </if>
+      <if test="record.itemKey != null">
+        item_key = #{record.itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=CHAR},
+      </if>
+      <if test="record.productLevel != null">
+        product_level = #{record.productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.site != null">
+        site = #{record.site,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channel != null">
+        channel = #{record.channel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cost != null">
+        cost = #{record.cost,jdbcType=DECIMAL},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=DECIMAL},
+      </if>
+      <if test="record.priceCny != null">
+        price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="record.priceType != null">
+        price_type = #{record.priceType,jdbcType=BIT},
+      </if>
+      <if test="record.profitRate != null">
+        profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=BIT},
+      </if>
+      <if test="record.insertTime != null">
+        insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.lastUpdateTime != null">
+        last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.isActivity != null">
+        is_activity = #{record.isActivity,jdbcType=BIT},
+      </if>
+      <if test="record.activityNote != null">
+        activity_note = #{record.activityNote,jdbcType=VARCHAR},
+      </if>
+      <if test="record.activityStartTime != null">
+        activity_start_time = #{record.activityStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.activityEndTime != null">
+        activity_end_time = #{record.activityEndTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update ma_price_warning
+    set id = #{record.id,jdbcType=INTEGER},
+      product_code = #{record.productCode,jdbcType=CHAR},
+      item_key = #{record.itemKey,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=CHAR},
+      product_level = #{record.productLevel,jdbcType=VARCHAR},
+      site = #{record.site,jdbcType=VARCHAR},
+      channel = #{record.channel,jdbcType=VARCHAR},
+      cost = #{record.cost,jdbcType=DECIMAL},
+      price = #{record.price,jdbcType=DECIMAL},
+      price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      price_type = #{record.priceType,jdbcType=BIT},
+      profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      status = #{record.status,jdbcType=BIT},
+      insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP},
+      is_activity = #{record.isActivity,jdbcType=BIT},
+      activity_note = #{record.activityNote,jdbcType=VARCHAR},
+      activity_start_time = #{record.activityStartTime,jdbcType=TIMESTAMP},
+      activity_end_time = #{record.activityEndTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <resultMap id="BaseResultMap" type="com.wangkang.entity.PriceWarning">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="product_code" jdbcType="CHAR" property="productCode" />
+    <result column="item_key" jdbcType="VARCHAR" property="itemKey" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="product_level" jdbcType="VARCHAR" property="productLevel" />
+    <result column="site" jdbcType="VARCHAR" property="site" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+    <result column="cost" jdbcType="DECIMAL" property="cost" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="price_cny" jdbcType="VARCHAR" property="priceCny" />
+    <result column="price_type" jdbcType="BIT" property="priceType" />
+    <result column="profit_rate" jdbcType="DECIMAL" property="profitRate" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="insert_time" jdbcType="TIMESTAMP" property="insertTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, product_code, item_key, type, product_level, site, channel, cost, price, price_cny, 
+    price_type, profit_rate, status, insert_time, last_update_time
+  </sql>
+  <select id="selectByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.wangkang.entity.PriceWarningExample">
+    delete from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning (id, product_code, item_key, 
+      type, product_level, site, 
+      channel, cost, price, 
+      price_cny, price_type, profit_rate, 
+      status, insert_time, last_update_time
+      )
+    values (#{id,jdbcType=INTEGER}, #{productCode,jdbcType=CHAR}, #{itemKey,jdbcType=VARCHAR}, 
+      #{type,jdbcType=CHAR}, #{productLevel,jdbcType=VARCHAR}, #{site,jdbcType=VARCHAR}, 
+      #{channel,jdbcType=VARCHAR}, #{cost,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL}, 
+      #{priceCny,jdbcType=VARCHAR}, #{priceType,jdbcType=BIT}, #{profitRate,jdbcType=DECIMAL}, 
+      #{status,jdbcType=BIT}, #{insertTime,jdbcType=TIMESTAMP}, #{lastUpdateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wangkang.entity.PriceWarning">
+    insert into ma_price_warning
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="productCode != null">
+        product_code,
+      </if>
+      <if test="itemKey != null">
+        item_key,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="productLevel != null">
+        product_level,
+      </if>
+      <if test="site != null">
+        site,
+      </if>
+      <if test="channel != null">
+        channel,
+      </if>
+      <if test="cost != null">
+        cost,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="priceCny != null">
+        price_cny,
+      </if>
+      <if test="priceType != null">
+        price_type,
+      </if>
+      <if test="profitRate != null">
+        profit_rate,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="insertTime != null">
+        insert_time,
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="productCode != null">
+        #{productCode,jdbcType=CHAR},
+      </if>
+      <if test="itemKey != null">
+        #{itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=CHAR},
+      </if>
+      <if test="productLevel != null">
+        #{productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="site != null">
+        #{site,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null">
+        #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="cost != null">
+        #{cost,jdbcType=DECIMAL},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="priceCny != null">
+        #{priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="priceType != null">
+        #{priceType,jdbcType=BIT},
+      </if>
+      <if test="profitRate != null">
+        #{profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=BIT},
+      </if>
+      <if test="insertTime != null">
+        #{insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateTime != null">
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wangkang.entity.PriceWarningExample" resultType="java.lang.Long">
+    select count(*) from ma_price_warning
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update ma_price_warning
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.productCode != null">
+        product_code = #{record.productCode,jdbcType=CHAR},
+      </if>
+      <if test="record.itemKey != null">
+        item_key = #{record.itemKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=CHAR},
+      </if>
+      <if test="record.productLevel != null">
+        product_level = #{record.productLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.site != null">
+        site = #{record.site,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channel != null">
+        channel = #{record.channel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cost != null">
+        cost = #{record.cost,jdbcType=DECIMAL},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=DECIMAL},
+      </if>
+      <if test="record.priceCny != null">
+        price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      </if>
+      <if test="record.priceType != null">
+        price_type = #{record.priceType,jdbcType=BIT},
+      </if>
+      <if test="record.profitRate != null">
+        profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=BIT},
+      </if>
+      <if test="record.insertTime != null">
+        insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.lastUpdateTime != null">
+        last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update ma_price_warning
+    set id = #{record.id,jdbcType=INTEGER},
+      product_code = #{record.productCode,jdbcType=CHAR},
+      item_key = #{record.itemKey,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=CHAR},
+      product_level = #{record.productLevel,jdbcType=VARCHAR},
+      site = #{record.site,jdbcType=VARCHAR},
+      channel = #{record.channel,jdbcType=VARCHAR},
+      cost = #{record.cost,jdbcType=DECIMAL},
+      price = #{record.price,jdbcType=DECIMAL},
+      price_cny = #{record.priceCny,jdbcType=VARCHAR},
+      price_type = #{record.priceType,jdbcType=BIT},
+      profit_rate = #{record.profitRate,jdbcType=DECIMAL},
+      status = #{record.status,jdbcType=BIT},
+      insert_time = #{record.insertTime,jdbcType=TIMESTAMP},
+      last_update_time = #{record.lastUpdateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

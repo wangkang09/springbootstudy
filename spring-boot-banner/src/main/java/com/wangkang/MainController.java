@@ -1,0 +1,19 @@
+package com.wangkang;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @Description:
+ * @Author: wangkang
+ * @Date: Created in 15:38 2018/12/17
+ * @Modified By:
+ */
+@RestController
+public class MainController {
+
+    @GetMapping("/banner")
+    public String test() {
+        return "hello world";
+    }
+}

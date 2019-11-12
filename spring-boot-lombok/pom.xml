@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.wangkang</groupId>
+		<artifactId>springboot-study</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.wangkang</groupId>
+	<artifactId>spring-boot-lombok</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-boot-lombok</name>
+	<description>Demo project for Spring Boot</description>
+
+	<dependencies>
+		<!-- 集成log4j+slf4j -->
+		<!--因为springboot默认继承了logback，所以如果要集成log4j要去除spring-boot-starter中的logging-start-->
+		<!--<dependency>-->
+				<!--<groupId>org.slf4j</groupId>-->
+				<!--<artifactId>slf4j-log4j12</artifactId>-->
+				<!--<version>1.8.0-alpha2</version>-->
+		<!--</dependency>-->
+	</dependencies>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+</project>

@@ -1,0 +1,442 @@
+2018-12-18 11:29:50  [ background-preinit:113 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 11:29:51  [ main:293 ] - [ INFO ]  Starting SpringBootLombokApplication on PC-20180521MXYH with PID 10064 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-lombok\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-18 11:29:51  [ main:294 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 11:29:51  [ main:381 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23fe1d71: startup date [Tue Dec 18 11:29:51 CST 2018]; root of context hierarchy
+2018-12-18 11:29:54  [ main:3181 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 11:29:54  [ localhost-startStop-1:3351 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2973 ms
+2018-12-18 11:29:54  [ localhost-startStop-1:3467 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 11:29:54  [ localhost-startStop-1:3475 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 11:29:54  [ localhost-startStop-1:3476 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 11:29:54  [ localhost-startStop-1:3476 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 11:29:54  [ localhost-startStop-1:3476 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 11:29:54  [ main:3650 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 11:29:54  [ main:3953 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23fe1d71: startup date [Tue Dec 18 11:29:51 CST 2018]; root of context hierarchy
+2018-12-18 11:29:54  [ main:4106 ] - [ INFO ]  Mapped "{[/lombok],methods=[GET]}" onto public java.lang.String com.wangkang.LombokController.test()
+2018-12-18 11:29:54  [ main:4113 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 11:29:54  [ main:4113 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 11:29:55  [ main:4231 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 11:29:55  [ main:4231 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 11:29:55  [ main:4450 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 11:29:55  [ main:4652 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 11:29:55  [ main:4656 ] - [ INFO ]  Started SpringBootLombokApplication in 4.702 seconds (JVM running for 5.239)
+2018-12-18 11:30:06  [ http-nio-8080-exec-3:15375 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 11:30:06  [ http-nio-8080-exec-3:15396 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-12-18 11:30:06  [ http-nio-8080-exec-3:15420 ] - [ INFO ]  姓名：wk，年龄：12，性别：man
+2018-12-18 11:30:06  [ http-nio-8080-exec-3:15420 ] - [ INFO ]  姓名：yq，年龄：11，性别：woman
+2018-12-18 11:49:43  [ background-preinit:196 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 11:49:43  [ main:347 ] - [ INFO ]  Starting SpringBootLombokApplication on PC-20180521MXYH with PID 2752 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-lombok\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-18 11:49:43  [ main:349 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 11:49:44  [ main:622 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e3fc542: startup date [Tue Dec 18 11:49:44 CST 2018]; root of context hierarchy
+2018-12-18 11:49:47  [ main:3537 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 11:49:47  [ localhost-startStop-1:3721 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3106 ms
+2018-12-18 11:49:47  [ localhost-startStop-1:3821 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 11:49:47  [ localhost-startStop-1:3825 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 11:49:47  [ localhost-startStop-1:3826 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 11:49:47  [ localhost-startStop-1:3826 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 11:49:47  [ localhost-startStop-1:3826 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 11:49:47  [ main:3989 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 11:49:48  [ main:4560 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e3fc542: startup date [Tue Dec 18 11:49:44 CST 2018]; root of context hierarchy
+2018-12-18 11:49:48  [ main:4654 ] - [ INFO ]  Mapped "{[/lombok],methods=[GET]}" onto public java.lang.String com.wangkang.LombokController.test()
+2018-12-18 11:49:48  [ main:4678 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 11:49:48  [ main:4679 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 11:49:48  [ main:4881 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 11:49:48  [ main:4881 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 11:49:48  [ main:5141 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 11:49:48  [ main:5309 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 11:49:48  [ main:5313 ] - [ INFO ]  Started SpringBootLombokApplication in 5.383 seconds (JVM running for 6.125)
+2018-12-18 11:55:35  [ http-nio-8080-exec-10:352167 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 11:55:35  [ http-nio-8080-exec-10:352189 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-12-18 13:17:44  [ background-preinit:143 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 13:17:44  [ main:318 ] - [ INFO ]  Starting SpringBootLombokApplication on PC-20180521MXYH with PID 1920 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-lombok\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-18 13:17:44  [ main:320 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 13:17:44  [ main:371 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c81cdd1: startup date [Tue Dec 18 13:17:44 CST 2018]; root of context hierarchy
+2018-12-18 13:17:46  [ main:3054 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 13:17:47  [ localhost-startStop-1:3187 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2818 ms
+2018-12-18 13:17:47  [ localhost-startStop-1:3260 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 13:17:47  [ localhost-startStop-1:3269 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 13:17:47  [ localhost-startStop-1:3269 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 13:17:47  [ localhost-startStop-1:3269 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 13:17:47  [ localhost-startStop-1:3269 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 13:17:47  [ main:3413 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 13:17:47  [ main:3802 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c81cdd1: startup date [Tue Dec 18 13:17:44 CST 2018]; root of context hierarchy
+2018-12-18 13:17:47  [ main:3963 ] - [ INFO ]  Mapped "{[/lombok],methods=[GET]}" onto public java.lang.String com.wangkang.LombokController.test()
+2018-12-18 13:17:47  [ main:3968 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 13:17:47  [ main:3968 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 13:17:47  [ main:4000 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 13:17:47  [ main:4000 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 13:17:48  [ main:4249 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 13:17:48  [ main:4335 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 13:17:48  [ main:4339 ] - [ INFO ]  Started SpringBootLombokApplication in 4.383 seconds (JVM running for 4.784)
+2018-12-18 17:45:40  [ background-preinit:305 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 17:45:40  [ main:525 ] - [ INFO ]  Starting SpringBootLombokApplication on PC-20180521MXYH with PID 1632 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-lombok\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-18 17:45:40  [ main:526 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 17:45:40  [ main:602 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43738a82: startup date [Tue Dec 18 17:45:40 CST 2018]; root of context hierarchy
+2018-12-18 17:45:42  [ main:3197 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 17:45:43  [ localhost-startStop-1:3392 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2794 ms
+2018-12-18 17:45:43  [ localhost-startStop-1:3495 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 17:45:43  [ localhost-startStop-1:3498 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 17:45:43  [ localhost-startStop-1:3498 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 17:45:43  [ localhost-startStop-1:3498 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 17:45:43  [ localhost-startStop-1:3498 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 17:45:43  [ main:3691 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 17:45:43  [ main:3971 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43738a82: startup date [Tue Dec 18 17:45:40 CST 2018]; root of context hierarchy
+2018-12-18 17:45:43  [ main:4067 ] - [ INFO ]  Mapped "{[/lombok],methods=[GET]}" onto public java.lang.String com.wangkang.LombokController.test()
+2018-12-18 17:45:43  [ main:4072 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 17:45:43  [ main:4073 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 17:45:43  [ main:4202 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 17:45:43  [ main:4202 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 17:45:44  [ main:4401 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 17:45:44  [ main:4560 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 17:45:44  [ main:4567 ] - [ INFO ]  Started SpringBootLombokApplication in 4.645 seconds (JVM running for 5.294)
+2018-12-18 17:47:11  [ http-nio-8080-exec-1:91857 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 17:47:11  [ http-nio-8080-exec-1:91876 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-12-18 21:18:16  [ background-preinit:97 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 21:18:16  [ main:224 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 11064 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 21:18:16  [ main:227 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 21:18:16  [ main:320 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:18:16 CST 2018]; root of context hierarchy
+2018-12-18 21:18:18  [ main:1772 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 21:18:19  [ localhost-startStop-1:2937 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2622 ms
+2018-12-18 21:18:19  [ localhost-startStop-1:2985 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 21:18:19  [ localhost-startStop-1:2988 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 21:18:19  [ localhost-startStop-1:2989 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 21:18:19  [ localhost-startStop-1:2989 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 21:18:19  [ localhost-startStop-1:2989 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 21:18:19  [ main:3095 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:18:19  [ main:3247 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:18:16 CST 2018]; root of context hierarchy
+2018-12-18 21:18:19  [ main:3303 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.ValidatorController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 21:18:19  [ main:3304 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.ValidatorController.validator2()
+2018-12-18 21:18:19  [ main:3304 ] - [ INFO ]  Mapped "{[/validator3],methods=[POST]}" onto public java.lang.String com.wangkang.controller.ValidatorController.validator3()
+2018-12-18 21:18:19  [ main:3310 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 21:18:19  [ main:3310 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 21:18:19  [ main:3351 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:18:19  [ main:3351 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:18:19  [ main:3491 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 21:18:19  [ main:3546 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 21:18:19  [ main:3548 ] - [ INFO ]  Started SpringBootValidatorApplication in 3.574 seconds (JVM running for 4.501)
+2018-12-18 21:18:32  [ http-nio-8080-exec-2:16452 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 21:18:32  [ http-nio-8080-exec-2:16480 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-12-18 21:18:33  [ http-nio-8080-exec-2:16630 ] - [ INFO ]  [user：不能为null]
+2018-12-18 21:28:49  [ background-preinit:91 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 21:28:50  [ main:197 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 15244 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 21:28:50  [ main:198 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 21:28:50  [ main:252 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:28:50 CST 2018]; root of context hierarchy
+2018-12-18 21:28:51  [ main:1448 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 21:28:52  [ localhost-startStop-1:2581 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2333 ms
+2018-12-18 21:28:52  [ localhost-startStop-1:2626 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 21:28:52  [ localhost-startStop-1:2628 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 21:28:52  [ localhost-startStop-1:2629 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 21:28:52  [ localhost-startStop-1:2629 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 21:28:52  [ localhost-startStop-1:2629 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 21:28:52  [ main:2723 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:28:52  [ main:2870 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:28:50 CST 2018]; root of context hierarchy
+2018-12-18 21:28:52  [ main:2907 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.Validator2Controller.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-18 21:28:52  [ main:2909 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.ValidatorController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 21:28:52  [ main:2913 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 21:28:52  [ main:2913 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 21:28:52  [ main:2955 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:28:52  [ main:2955 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:28:52  [ main:3091 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 21:28:52  [ main:3125 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 21:28:52  [ main:3127 ] - [ INFO ]  Started SpringBootValidatorApplication in 3.154 seconds (JVM running for 3.979)
+2018-12-18 21:28:58  [ http-nio-8080-exec-5:8638 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 21:28:58  [ http-nio-8080-exec-5:8658 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-12-18 21:30:53  [ background-preinit:88 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 21:30:53  [ main:205 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 7396 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 21:30:53  [ main:209 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 21:30:53  [ main:282 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:30:53 CST 2018]; root of context hierarchy
+2018-12-18 21:30:54  [ main:1490 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 21:30:56  [ localhost-startStop-1:2614 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2337 ms
+2018-12-18 21:30:56  [ localhost-startStop-1:2657 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 21:30:56  [ localhost-startStop-1:2660 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 21:30:56  [ localhost-startStop-1:2660 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 21:30:56  [ localhost-startStop-1:2661 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 21:30:56  [ localhost-startStop-1:2661 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 21:30:56  [ main:2759 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:30:56  [ main:2933 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:30:53 CST 2018]; root of context hierarchy
+2018-12-18 21:30:56  [ main:2970 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.Validator2Controller.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-18 21:30:56  [ main:2971 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.ValidatorController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 21:30:56  [ main:2976 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 21:30:56  [ main:2976 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 21:30:56  [ main:3020 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:30:56  [ main:3021 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:30:56  [ main:3138 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 21:30:56  [ main:3174 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 21:30:56  [ main:3178 ] - [ INFO ]  Started SpringBootValidatorApplication in 3.205 seconds (JVM running for 3.995)
+2018-12-18 21:31:14  [ http-nio-8080-exec-1:21162 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 21:31:14  [ http-nio-8080-exec-1:21184 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-12-18 21:31:14  [ http-nio-8080-exec-1:21212 ] - [ INFO ]  org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty]
+Field error in object 'student' on field 'age': rejected value [null]; codes [02.student.age,02.age,02.java.lang.Integer,02]; arguments []; default message [age is empty]
+2018-12-18 21:59:43  [ background-preinit:90 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 21:59:43  [ main:240 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 9704 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 21:59:43  [ main:241 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 21:59:43  [ main:306 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:59:43 CST 2018]; root of context hierarchy
+2018-12-18 21:59:45  [ main:1800 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 21:59:46  [ localhost-startStop-1:2920 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2618 ms
+2018-12-18 21:59:46  [ localhost-startStop-1:2963 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 21:59:46  [ localhost-startStop-1:2965 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 21:59:46  [ localhost-startStop-1:2966 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 21:59:46  [ localhost-startStop-1:2966 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 21:59:46  [ localhost-startStop-1:2966 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 21:59:46  [ main:3082 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:59:46  [ main:3222 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382db087: startup date [Tue Dec 18 21:59:43 CST 2018]; root of context hierarchy
+2018-12-18 21:59:46  [ main:3259 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 21:59:46  [ main:3260 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-18 21:59:46  [ main:3260 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-18 21:59:46  [ main:3265 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 21:59:46  [ main:3265 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 21:59:46  [ main:3302 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:59:46  [ main:3302 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 21:59:46  [ main:3419 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 21:59:46  [ main:3455 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 21:59:46  [ main:3457 ] - [ INFO ]  Started SpringBootValidatorApplication in 3.488 seconds (JVM running for 4.278)
+2018-12-18 21:59:56  [ http-nio-8080-exec-4:13202 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 21:59:56  [ http-nio-8080-exec-4:13222 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-12-18 21:59:56  [ http-nio-8080-exec-4:13259 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty], Field error in object 'student' on field 'age': rejected value [null]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]
+2018-12-18 22:00:35  [ http-nio-8080-exec-3:52672 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty], Field error in object 'student' on field 'age': rejected value [null]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]
+2018-12-18 22:00:40  [ http-nio-8080-exec-7:56773 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty], Field error in object 'student' on field 'age': rejected value [null]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]
+2018-12-18 22:01:25  [ background-preinit:363 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 22:01:25  [ main:545 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 8724 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 22:01:25  [ main:547 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 22:01:25  [ main:591 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20140db9: startup date [Tue Dec 18 22:01:25 CST 2018]; root of context hierarchy
+2018-12-18 22:01:26  [ main:1772 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 22:01:27  [ localhost-startStop-1:2931 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2343 ms
+2018-12-18 22:01:27  [ localhost-startStop-1:2987 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 22:01:27  [ localhost-startStop-1:2991 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 22:01:27  [ localhost-startStop-1:2991 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 22:01:27  [ localhost-startStop-1:2991 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 22:01:27  [ localhost-startStop-1:2991 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 22:01:28  [ main:4008 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:01:29  [ main:4270 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20140db9: startup date [Tue Dec 18 22:01:25 CST 2018]; root of context hierarchy
+2018-12-18 22:01:29  [ main:4423 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 22:01:29  [ main:4425 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-18 22:01:29  [ main:4425 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-18 22:01:29  [ main:4437 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 22:01:29  [ main:4437 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 22:01:29  [ main:4501 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:01:29  [ main:4502 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:01:29  [ main:4719 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 22:01:29  [ main:4818 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 22:01:29  [ main:4826 ] - [ INFO ]  Started SpringBootValidatorApplication in 4.875 seconds (JVM running for 6.588)
+2018-12-18 22:01:32  [ http-nio-8080-exec-1:8129 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 22:01:32  [ http-nio-8080-exec-1:8154 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-12-18 22:02:00  [ http-nio-8080-exec-1:35539 ] - [ INFO ]  org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty]
+Field error in object 'student' on field 'age': rejected value [null]; codes [02.student.age,02.age,02.java.lang.Integer,02]; arguments []; default message [age is empty]
+2018-12-18 22:02:03  [ background-preinit:116 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 22:02:03  [ main:409 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 2560 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 22:02:03  [ main:411 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 22:02:03  [ main:525 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38cee291: startup date [Tue Dec 18 22:02:03 CST 2018]; root of context hierarchy
+2018-12-18 22:02:05  [ main:2266 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 22:02:06  [ localhost-startStop-1:3402 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2891 ms
+2018-12-18 22:02:06  [ localhost-startStop-1:3466 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 22:02:06  [ localhost-startStop-1:3470 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 22:02:06  [ localhost-startStop-1:3470 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 22:02:06  [ localhost-startStop-1:3471 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 22:02:06  [ localhost-startStop-1:3471 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 22:02:07  [ main:4405 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:02:08  [ main:4665 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38cee291: startup date [Tue Dec 18 22:02:03 CST 2018]; root of context hierarchy
+2018-12-18 22:02:08  [ main:4807 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 22:02:08  [ main:4810 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-18 22:02:08  [ main:4810 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-18 22:02:08  [ main:4822 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 22:02:08  [ main:4823 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 22:02:08  [ main:4879 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:02:08  [ main:4879 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:02:08  [ main:5087 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 22:02:08  [ main:5204 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 22:02:08  [ main:5217 ] - [ INFO ]  Started SpringBootValidatorApplication in 5.252 seconds (JVM running for 6.3)
+2018-12-18 22:02:15  [ http-nio-8080-exec-2:11951 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 22:02:15  [ http-nio-8080-exec-2:11977 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-12-18 22:02:20  [ http-nio-8080-exec-2:17106 ] - [ INFO ]  org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty]
+2018-12-18 22:02:37  [ http-nio-8080-exec-3:34483 ] - [ INFO ]  org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty]
+2018-12-18 22:02:51  [ background-preinit:137 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 22:02:51  [ main:373 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 14528 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 22:02:51  [ main:376 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 22:02:51  [ main:452 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6340e5f0: startup date [Tue Dec 18 22:02:51 CST 2018]; root of context hierarchy
+2018-12-18 22:02:52  [ main:1806 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 22:02:54  [ localhost-startStop-1:2968 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2520 ms
+2018-12-18 22:02:54  [ localhost-startStop-1:3024 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 22:02:54  [ localhost-startStop-1:3028 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 22:02:54  [ localhost-startStop-1:3029 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 22:02:54  [ localhost-startStop-1:3029 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 22:02:54  [ localhost-startStop-1:3029 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 22:02:55  [ main:3875 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:02:55  [ main:4116 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6340e5f0: startup date [Tue Dec 18 22:02:51 CST 2018]; root of context hierarchy
+2018-12-18 22:02:55  [ main:4220 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 22:02:55  [ main:4222 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-18 22:02:55  [ main:4222 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-18 22:02:55  [ main:4231 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 22:02:55  [ main:4231 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 22:02:55  [ main:4285 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:02:55  [ main:4285 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:02:55  [ main:4479 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 22:02:55  [ main:4552 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 22:02:55  [ main:4559 ] - [ INFO ]  Started SpringBootValidatorApplication in 4.596 seconds (JVM running for 5.515)
+2018-12-18 22:03:07  [ http-nio-8080-exec-1:16556 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 22:03:07  [ http-nio-8080-exec-1:16584 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-12-18 22:03:18  [ http-nio-8080-exec-1:26950 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty]]
+2018-12-18 22:03:57  [ http-nio-8080-exec-3:66316 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [null]; codes [01.student.name,01.name,01.java.lang.String,01]; arguments []; default message [name is empty]]
+2018-12-18 22:04:24  [ background-preinit:114 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-18 22:04:25  [ main:314 ] - [ INFO ]  Starting SpringBootValidatorApplication on LAPTOP-I6FV3OTQ with PID 13624 (D:\Download\github\springbootstudy\spring-boot-validator\target\classes started by wangk in D:\Download\github\springbootstudy)
+2018-12-18 22:04:25  [ main:316 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-18 22:04:25  [ main:392 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e350b40: startup date [Tue Dec 18 22:04:25 CST 2018]; root of context hierarchy
+2018-12-18 22:04:26  [ main:1879 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-18 22:04:27  [ localhost-startStop-1:3029 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2642 ms
+2018-12-18 22:04:27  [ localhost-startStop-1:3090 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-18 22:04:27  [ localhost-startStop-1:3094 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 22:04:27  [ localhost-startStop-1:3094 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 22:04:27  [ localhost-startStop-1:3094 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 22:04:27  [ localhost-startStop-1:3095 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 22:04:28  [ main:3999 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:04:28  [ main:4248 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e350b40: startup date [Tue Dec 18 22:04:25 CST 2018]; root of context hierarchy
+2018-12-18 22:04:29  [ main:4346 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-18 22:04:29  [ main:4349 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-18 22:04:29  [ main:4350 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-18 22:04:29  [ main:4365 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 22:04:29  [ main:4366 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 22:04:29  [ main:4423 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:04:29  [ main:4423 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 22:04:29  [ main:4635 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-18 22:04:29  [ main:4746 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 22:04:29  [ main:4754 ] - [ INFO ]  Started SpringBootValidatorApplication in 4.786 seconds (JVM running for 5.867)
+2018-12-18 22:04:42  [ http-nio-8080-exec-1:18257 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-18 22:04:42  [ http-nio-8080-exec-1:18284 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-12-18 22:05:08  [ http-nio-8080-exec-2:43820 ] - [ WARN ]  Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-18 22:05:22  [ http-nio-8080-exec-5:58119 ] - [ INFO ]  [Field error in object 'student' on field 'age': rejected value [null]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]
+2018-12-19 13:54:56  [ background-preinit:88 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-19 13:54:57  [ main:339 ] - [ INFO ]  Starting SpringBootValidatorApplication on PC-20180521MXYH with PID 9048 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-validator\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-19 13:54:57  [ main:340 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-19 13:54:57  [ main:391 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6121c9d6: startup date [Wed Dec 19 13:54:57 CST 2018]; root of context hierarchy
+2018-12-19 13:54:59  [ main:2386 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-19 13:54:59  [ localhost-startStop-1:2473 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2086 ms
+2018-12-19 13:54:59  [ localhost-startStop-1:2518 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-19 13:54:59  [ localhost-startStop-1:2522 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-19 13:54:59  [ localhost-startStop-1:2522 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-19 13:54:59  [ localhost-startStop-1:2522 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-19 13:54:59  [ localhost-startStop-1:2522 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-19 13:54:59  [ main:2647 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 13:54:59  [ main:2845 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6121c9d6: startup date [Wed Dec 19 13:54:57 CST 2018]; root of context hierarchy
+2018-12-19 13:54:59  [ main:2927 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-19 13:54:59  [ main:2928 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-19 13:54:59  [ main:2929 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-19 13:54:59  [ main:2935 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-19 13:54:59  [ main:2935 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-19 13:54:59  [ main:2970 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 13:54:59  [ main:2970 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 13:54:59  [ main:3100 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-19 13:54:59  [ main:3157 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 13:54:59  [ main:3160 ] - [ INFO ]  Started SpringBootValidatorApplication in 3.204 seconds (JVM running for 3.702)
+2018-12-19 13:55:18  [ http-nio-8080-exec-2:21987 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-19 13:55:18  [ http-nio-8080-exec-2:22001 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-12-19 13:55:18  [ http-nio-8080-exec-2:22076 ] - [ INFO ]  [Field error in object 'student' on field 'age': rejected value [121]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]
+2018-12-19 13:56:52  [ http-nio-8080-exec-7:115408 ] - [ INFO ]  [Field error in object 'student' on field 'age': rejected value [51]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]
+2018-12-19 13:57:55  [ background-preinit:78 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-19 13:57:55  [ main:297 ] - [ INFO ]  Starting SpringBootValidatorApplication on PC-20180521MXYH with PID 6624 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-validator\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-19 13:57:55  [ main:298 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-19 13:57:55  [ main:405 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@366647c2: startup date [Wed Dec 19 13:57:55 CST 2018]; root of context hierarchy
+2018-12-19 13:57:57  [ main:2122 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-19 13:57:57  [ localhost-startStop-1:2220 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1818 ms
+2018-12-19 13:57:57  [ localhost-startStop-1:2275 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-19 13:57:57  [ localhost-startStop-1:2279 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-19 13:57:57  [ localhost-startStop-1:2279 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-19 13:57:57  [ localhost-startStop-1:2279 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-19 13:57:57  [ localhost-startStop-1:2280 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-19 13:57:57  [ main:2406 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 13:57:57  [ main:2597 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@366647c2: startup date [Wed Dec 19 13:57:55 CST 2018]; root of context hierarchy
+2018-12-19 13:57:58  [ main:2653 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-19 13:57:58  [ main:2655 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-19 13:57:58  [ main:2656 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-19 13:57:58  [ main:2662 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-19 13:57:58  [ main:2662 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-19 13:57:58  [ main:2702 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 13:57:58  [ main:2702 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 13:57:58  [ main:2860 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-19 13:57:58  [ main:2921 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 13:57:58  [ main:2924 ] - [ INFO ]  Started SpringBootValidatorApplication in 2.965 seconds (JVM running for 3.428)
+2018-12-19 13:58:11  [ http-nio-8080-exec-2:16598 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-19 13:58:11  [ http-nio-8080-exec-2:16615 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-12-19 13:58:12  [ http-nio-8080-exec-2:16772 ] - [ INFO ]  [Field error in object 'student' on field 'age': rejected value [1]; codes [Min.student.age,Min.age,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.age,age]; arguments []; default message [age],10]; default message [最小不能小于10]]
+2018-12-19 14:02:35  [ background-preinit:90 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-19 14:02:35  [ main:233 ] - [ INFO ]  Starting SpringBootValidatorApplication on PC-20180521MXYH with PID 8820 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-validator\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-19 14:02:35  [ main:234 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-19 14:02:35  [ main:283 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@366647c2: startup date [Wed Dec 19 14:02:35 CST 2018]; root of context hierarchy
+2018-12-19 14:02:37  [ main:1983 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-19 14:02:37  [ localhost-startStop-1:2108 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1827 ms
+2018-12-19 14:02:37  [ localhost-startStop-1:2205 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-19 14:02:37  [ localhost-startStop-1:2210 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-19 14:02:37  [ localhost-startStop-1:2210 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-19 14:02:37  [ localhost-startStop-1:2211 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-19 14:02:37  [ localhost-startStop-1:2211 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-19 14:02:37  [ main:2354 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:02:37  [ main:2571 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@366647c2: startup date [Wed Dec 19 14:02:35 CST 2018]; root of context hierarchy
+2018-12-19 14:02:37  [ main:2624 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-19 14:02:37  [ main:2626 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-19 14:02:37  [ main:2626 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-19 14:02:37  [ main:2632 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-19 14:02:37  [ main:2633 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-19 14:02:37  [ main:2682 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:02:37  [ main:2682 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:02:37  [ main:2829 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-19 14:02:38  [ main:2893 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 14:02:38  [ main:2896 ] - [ INFO ]  Started SpringBootValidatorApplication in 2.942 seconds (JVM running for 3.333)
+2018-12-19 14:03:15  [ http-nio-8080-exec-2:40630 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-19 14:03:15  [ http-nio-8080-exec-2:40648 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-12-19 14:04:01  [ background-preinit:99 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-19 14:04:01  [ main:273 ] - [ INFO ]  Starting SpringBootValidatorApplication on PC-20180521MXYH with PID 8040 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-validator\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-19 14:04:01  [ main:275 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-19 14:04:01  [ main:363 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2abf4075: startup date [Wed Dec 19 14:04:01 CST 2018]; root of context hierarchy
+2018-12-19 14:04:03  [ main:2126 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-19 14:04:03  [ localhost-startStop-1:2311 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1951 ms
+2018-12-19 14:04:03  [ localhost-startStop-1:2378 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-19 14:04:03  [ localhost-startStop-1:2382 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-19 14:04:03  [ localhost-startStop-1:2382 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-19 14:04:03  [ localhost-startStop-1:2382 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-19 14:04:03  [ localhost-startStop-1:2382 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-19 14:04:03  [ main:2512 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:04:03  [ main:2714 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2abf4075: startup date [Wed Dec 19 14:04:01 CST 2018]; root of context hierarchy
+2018-12-19 14:04:03  [ main:2772 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-19 14:04:03  [ main:2773 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-19 14:04:03  [ main:2774 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-19 14:04:03  [ main:2781 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-19 14:04:03  [ main:2782 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-19 14:04:03  [ main:2834 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:04:03  [ main:2834 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:04:03  [ main:2972 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-19 14:04:03  [ main:3041 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 14:04:03  [ main:3044 ] - [ INFO ]  Started SpringBootValidatorApplication in 3.083 seconds (JVM running for 3.47)
+2018-12-19 14:04:05  [ http-nio-8080-exec-1:4711 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-19 14:04:05  [ http-nio-8080-exec-1:4728 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-12-19 14:04:05  [ http-nio-8080-exec-1:4856 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [w]; codes [Size.student.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.name,name]; arguments []; default message [name],20,3]; default message [用户名长度只能在3-20之间]]
+2018-12-19 14:04:17  [ http-nio-8080-exec-4:16206 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [w]; codes [Size.student.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.name,name]; arguments []; default message [name],20,3]; default message [用户名长度只能在3-20之间]]
+2018-12-19 14:04:53  [ http-nio-8080-exec-5:52403 ] - [ INFO ]  [Field error in object 'student' on field 'name': rejected value [w]; codes [Size.student.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.name,name]; arguments []; default message [name],20,3]; default message [用户名长度只能在3-20之间]]
+2018-12-19 14:05:01  [ http-nio-8080-exec-8:60234 ] - [ INFO ]  [Field error in object 'student' on field 'age': rejected value [1]; codes [Min.student.age,Min.age,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.age,age]; arguments []; default message [age],10]; default message [年龄最小10岁]]
+2018-12-19 14:07:08  [ background-preinit:84 ] - [ INFO ]  HV000001: Hibernate Validator 6.0.11.Final
+2018-12-19 14:07:08  [ main:214 ] - [ INFO ]  Starting SpringBootValidatorApplication on PC-20180521MXYH with PID 4940 (C:\Users\Administrator\Documents\GitHub\springbootstudy\spring-boot-validator\target\classes started by Administrator in C:\Users\Administrator\Documents\GitHub\springbootstudy)
+2018-12-19 14:07:08  [ main:216 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-12-19 14:07:08  [ main:253 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@865dd6: startup date [Wed Dec 19 14:07:08 CST 2018]; root of context hierarchy
+2018-12-19 14:07:10  [ main:2050 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-12-19 14:07:10  [ localhost-startStop-1:2156 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1906 ms
+2018-12-19 14:07:10  [ localhost-startStop-1:2218 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2018-12-19 14:07:10  [ localhost-startStop-1:2222 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-19 14:07:10  [ localhost-startStop-1:2223 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-19 14:07:10  [ localhost-startStop-1:2223 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-19 14:07:10  [ localhost-startStop-1:2223 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-19 14:07:10  [ main:2357 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:07:10  [ main:2567 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@865dd6: startup date [Wed Dec 19 14:07:08 CST 2018]; root of context hierarchy
+2018-12-19 14:07:10  [ main:2622 ] - [ INFO ]  Mapped "{[/validator1],methods=[POST]}" onto public java.lang.String com.wangkang.controller.JavaxController.validator1(com.wangkang.vo.User,org.springframework.validation.BindingResult)
+2018-12-19 14:07:10  [ main:2624 ] - [ INFO ]  Mapped "{[/validator2],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.validator2(com.wangkang.vo.Student,org.springframework.validation.Errors)
+2018-12-19 14:07:10  [ main:2624 ] - [ INFO ]  Mapped "{[/springValidator],methods=[POST]}" onto public java.lang.String com.wangkang.controller.SpringframeworkController.springValidator(com.wangkang.vo.Student,org.springframework.validation.BindingResult)
+2018-12-19 14:07:10  [ main:2630 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-19 14:07:10  [ main:2630 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-19 14:07:10  [ main:2666 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:07:10  [ main:2666 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-19 14:07:11  [ main:2819 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-12-19 14:07:11  [ main:2881 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 14:07:11  [ main:2885 ] - [ INFO ]  Started SpringBootValidatorApplication in 2.936 seconds (JVM running for 3.303)
+2018-12-19 14:07:30  [ http-nio-8080-exec-6:22451 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-19 14:07:30  [ http-nio-8080-exec-6:22468 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-12-19 14:07:34  [ http-nio-8080-exec-10:26282 ] - [ INFO ]  [Field error in object 'student' on field 'age': rejected value [1111]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]
+2018-12-19 14:07:40  [ http-nio-8080-exec-4:32028 ] - [ INFO ]  [Field error in object 'student' on field 'age': rejected value [1111]; codes [ageToLager.student.age,ageToLager.age,ageToLager.java.lang.Integer,ageToLager]; arguments []; default message [age too large]]

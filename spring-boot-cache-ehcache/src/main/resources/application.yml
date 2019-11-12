@@ -1,0 +1,19 @@
+# PageHelper配置
+#pagehelper:
+#     offsetAsPageNum: true
+#     rowBoundsWithCount: true
+#     reasonable: true
+#     returnPageInfo: true
+#     params: count=countSql
+
+
+## https://blog.csdn.net/li_tianchang/article/details/81450849
+# https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
+# https://github.com/abel533/MyBatis-Spring-Boot
+
+
+spring:
+  cache:
+    ehcache:
+      config: classpath:config/ehcache.xml
+    type: ehcache

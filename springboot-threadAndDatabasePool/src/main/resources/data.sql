@@ -1,0 +1,1 @@
+INSERT INTO `account_tbl` VALUES (1, 'wangkang', 100000000);

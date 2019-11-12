@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wangkang</groupId>
+    <artifactId>springboot-study</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>springboot-study</name>
+
+
+    <!-- 添加Spring Boot的父类依赖，这样当前项目就是Spring Boot项目了。 spring-boot-starter-parent是一个特殊的starter，他用来
+        提供相关的maven默认依赖， 使用它之后，常用的依赖可以省去version标签 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
+
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <!-- 关键去除logback的中关于slf4j的依赖，避免集成log4j依赖冲突-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-starter-logging</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <!-- 设置Spring Boot启动Banner -->
+        <module>spring-boot-autoconfiguration</module>
+        <module>spring-boot-banner</module>
+        <module>spring-boot-bean-definition-orde</module>
+        <!-- Spring Boot Spring cache使用 -->
+        <module>spring-boot-cache</module>
+        <module>spring-boot-cache-caffeine</module>
+
+
+        <module>spring-boot-cache-ehcache</module>
+        <module>spring-boot-cache-redis</module>
+        <module>spring-boot-cache-transaction</module>
+        <module>spring-boot-commandlinerunner</module>
+        <!-- Spring Boot 读取配置文件 -->
+        <module>spring-boot-config</module>
+
+
+        <!-- Spring Boot datasource/数据库连接池 -->
+        <module>spring-boot-datasource</module>
+        <module>spring-boot-depend</module>
+        <!-- Spring Boot 使用data-jpa操作数据库 -->
+        <module>spring-boot-jpa</module>
+        <module>spring-boot-junit</module>
+        <!-- Spring Boot 集成日志框架 -->
+        <module>spring-boot-log</module>
+
+
+        <!-- Spring Boot 集成lombok -->
+        <module>spring-boot-lombok</module>
+        <module>spring-boot-mock</module>
+        <!-- Spring Boot 异常和全局异常处理 -->
+        <module>spring-boot-mvc</module>
+        <!-- Spring Boot 使用ehcache作为Mybatis的二级缓存 -->
+        <module>spring-boot-mybatis-ehcache</module>
+        <!-- Spring Boot 使用Mybatis自动代码生成 -->
+        <module>spring-boot-mybatis-generator</module>
+
+
+        <!-- Spring Boot 使用Mybatis分页查询 -->
+        <module>spring-boot-mybatis-pageinfo</module>
+        <module>spring-boot-schedule</module>
+        <module>spring-boot-schemasql</module>
+        <module>spring-boot-transaction</module>
+        <!-- Spring Boot 参数校验 -->
+        <module>spring-boot-validator</module>
+
+
+        <!-- Spring Boot webflux定义filter/listener/servlet -->
+        <module>spring-boot-webflux</module>
+        <module>springboot-threadAndDatabasePool</module>
+        <module>spring-boot-io-nio-socket</module>
+    </modules>
+</project>

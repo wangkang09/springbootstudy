@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 配置mysql 驱动jar包路径.用了绝对路径 -->
+    <classPathEntry location="D:\develop\lib\mysql\mysql-connector-java\8.0.13/mysql-connector-java-8.0.13.jar" />
+
+    <context id="wangkang_test" targetRuntime="MyBatis3">
+        <!--指定版本-->
+        <property name="mybatisVersion" value="3.5.0"/>
+
+
+        <!-- 批量插入插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.BatchInsertPlugin">
+            <!--
+            开启后可以实现官方插件根据属性是否为空决定是否插入该字段功能
+            ！需开启allowMultiQueries=true多条sql提交操作，所以不建议使用！插件默认不开启
+            -->
+            <property name="allowMultiQueries" value="false"/>
+        </plugin>
+        <!-- 数据Model属性对应Column获取插件，配合批量插入插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.ModelColumnPlugin"/>
+
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
+        <!--生成 withXXX-->
+        <plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$"/>
+            <property name="replaceString" value="Condition"/>
+        </plugin>
+        <!-- MySQL分页插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.LimitPlugin">
+            <!-- 通过配置startPage影响Example中的page方法开始分页的页码，默认分页从0开始 -->
+            <property name="startPage" value="1"/>
+        </plugin>
+        <!-- Example Criteria 增强插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.ExampleEnhancedPlugin">
+            <!-- 是否支持已经过时的andIf方法（推荐使用when代替），默认支持 -->
+            <property name="enableAndIf" value="true"/>
+        </plugin>
+        <!-- 防止生成的代码中有很多注释，加入下面的配置控制 -->
+        <commentGenerator>
+            <!--去除注释-->
+            <property name="suppressAllComments" value="true" />
+            <!--注释中去除日期注释-->
+            <property name="suppressDate" value="true" />
+            <!--注释中添加数据库字段备注注释-->
+            <property name="addRemarkComments" value="true"/>
+        </commentGenerator>
+
+        <!-- 数据库连接 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/gateway?useUnicode=true;characterEncoding=UTF-8;useSSL=false;zeroDateTimeBehavior=convertToNull;autoReconnect=true"
+                        userId="root"
+                        password="root">
+            <!--MySQL 8.x 需要指定服务器的时区-->
+            <!--<property name="serverTimezone" value="UTC"/>-->
+            <!--MySQL 不支持 schema 或者 catalog 所以需要添加这个-->
+            <!--参考 : http://www.mybatis.org/generator/usage/mysql.html，解决 Not found primary key 的 问题-->
+            <property name="nullCatalogMeansCurrent" value="true"/>
+            <!-- MySQL8默认启用 SSL ,不关闭会有警告-->
+            <property name="useSSL" value="false"/>
+
+        </jdbcConnection>
+
+
+        <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
+            NUMERIC 类型解析为java.math.BigDecimal -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+
+        <!-- 数据表对应的model层  -->
+        <javaModelGenerator targetPackage="com.wangkang.entity" targetProject="./src/main/java">
+
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false"/>
+            <!-- 从数据库返回的值被清理前后的空格 -->
+            <property name="trimStrings" value="true"/>
+
+        </javaModelGenerator>
+
+        <!-- sql mapper 映射配置文件 -->
+        <sqlMapGenerator targetPackage="com.wangkang.entity.mapper"  targetProject="./src/main/resources">
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+
+        <!-- mybatis3中的mapper接口 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.wangkang.entity.mapper"  targetProject="./src/main/java">
+            <property name="enableSubPackages" value="false" />
+        </javaClientGenerator>
+
+         <!--数据表进行生成操作 schema:相当于库名; tableName:表名; domainObjectName:对应的DO-->
+        <!--<table tableName="gateway_config" schema="gateway" domainObjectName="GatewayConfig">-->
+            <!--<generatedKey sqlStatement="MySql" column="id" type="post" identity="true"></generatedKey>-->
+            <!--<columnOverride column="gateway_config_label" property="label"/>-->
+            <!--<columnOverride column="gateway_config_key" property="key"/>-->
+        <!--</table>-->
+
+        <table tableName="service" schema="gateway" domainObjectName="Service">
+            <generatedKey sqlStatement="MySql" column="id" type="post" identity="true"></generatedKey>
+        </table>
+    </context>
+</generatorConfiguration>

@@ -1,0 +1,61 @@
+# PageHelper配置
+#pagehelper:
+#     offsetAsPageNum: true
+#     rowBoundsWithCount: true
+#     reasonable: true
+#     returnPageInfo: true
+#     params: count=countSql
+
+
+## https://blog.csdn.net/li_tianchang/article/details/81450849
+# https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
+# https://github.com/abel533/MyBatis-Spring-Boot
+
+
+spring:
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+    # url: wangkang
+    # password: 123456
+    database: 1
+
+    timeout: 1000
+    ssl: false
+
+    jedis:
+      pool:
+        min-idle: 1 # default 0
+        max-wait: 1000 # default -1ms
+        max-active: 10 # default 8
+        max-idle: 2 # default 8
+
+    lettuce:
+      pool:
+        min-idle: 1 # default 0
+        max-wait: 1000 # default -1ms
+        max-active: 10 # default 8
+        max-idle: 2 # default 8
+      shutdown-timeout: 200 # default 100ms
+
+
+
+    # 分布式设置
+#    cluster:
+#      max-redirects:
+#      nodes:
+    # 监控设置
+#    sentinel:
+#      master:
+#      nodes:
+
+#what is Sentinel
+#Monitoring. Sentinel constantly check if your master and slave instances are working as expected.
+#Notification. Sentinel can notify the system administrator, or another computer program, via an API, that something is wrong with one of the monitored Redis instances.
+#Automatic failover. If a master is not working as expected, Sentinel can start a failover process where a slave is promoted to master, the other additional slaves are reconfigured to use the new master, and the applications using the Redis server informed about the new address to use when connecting.
+
+# 监控redis主从实例是否正常
+# 如果redis主从实例异常，通知系统管理员
+# 自动故障转移：主实例失败时，自动切换一个从实例为主实例

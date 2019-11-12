@@ -1,0 +1,29 @@
+# PageHelper配置
+#pagehelper:
+#     offsetAsPageNum: true
+#     rowBoundsWithCount: true
+#     reasonable: true
+#     returnPageInfo: true
+#     params: count=countSql
+
+
+## https://blog.csdn.net/li_tianchang/article/details/81450849
+# https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
+# https://github.com/abel533/MyBatis-Spring-Boot
+
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MYSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false
+    driver-class-name: org.h2.Driver
+    username: root
+    password: root
+    schema-username: root
+    schema-password: root
+    data-username: root
+    data-password: root
+    schema: classpath:sql/schema.sql
+    #data: classpath:sql/data.sql
+    initialization-mode: always
+    platform: h2
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "classG" class="com.wangkang.xmlDependsOn.ClassG" depends-on="classH" />
+    <bean id = "classH" class="com.wangkang.xmlDependsOn.ClassH" depends-on="classI" />
+    <bean id = "classI" class="com.wangkang.xmlDependsOn.ClassI" depends-on="classG" />
+
+</beans>
