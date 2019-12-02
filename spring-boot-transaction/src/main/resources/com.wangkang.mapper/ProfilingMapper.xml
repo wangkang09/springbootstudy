@@ -339,7 +339,4 @@
     SELECT <include refid="Base_Column_List1"/>  FROM INFORMATION_SCHEMA.PROFILING order by QUERY_ID DESC,SEQ limit 17
   </select>
 
-  <select id="selectOtherDatabase" resultType="int">
-    select count(*) from shein_gateway.sg_gateway_config
-  </select>
 </mapper>

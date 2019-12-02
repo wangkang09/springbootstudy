@@ -15,8 +15,8 @@ management:
       # 开放指定节点
       exposure:
         include:
-          - health
-          - info
+#          - health
+#          - info
           - mappings
           - env
           - shutdown
@@ -24,16 +24,19 @@ management:
           - httptrace
           - loggers
           - battcn
-          - cend
-          - cend1
+          - controller
+          - webEndpoint
       # 自定义路径映射
       path-mapping:
         # key=>value形式，原映射路径=>新映射路径
         health: healthcheck
+        info: myInfo
   # 显示详细健康信息
   endpoint:
     health:
       show-details: always
+      cache:
+        time-to-live: 10
     # 开启远程关闭服务
     shutdown:
       enabled: true

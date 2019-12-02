@@ -1,11 +1,7 @@
 package com.wangkang.controller;
 
-import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 import org.springframework.boot.actuate.endpoint.web.annotation.ControllerEndpoint;
 import org.springframework.stereotype.Component;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Description:
@@ -17,15 +13,11 @@ import java.util.Map;
 @ControllerEndpoint(id = "controller")
 public class EndpointController {
 
-//    @ReadOperation(produces="cend")
-//    public String read() {
-//        return "controller endpoint";
+//controllerEndpoint 不能有 operation，why?
+//    @ReadOperation
+//    public Map readMap() {
+//        Map<String,String> map = new HashMap<>();
+//        map.put("1","1");
+//        return map;
 //    }
-
-    @ReadOperation
-    public Map readMap() {
-        Map<String,String> map = new HashMap<>();
-        map.put("1","1");
-        return map;
-    }
 }
