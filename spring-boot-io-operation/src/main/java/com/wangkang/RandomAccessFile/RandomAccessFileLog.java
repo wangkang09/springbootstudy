@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
  * @Date: Created in 21:17 2019/12/5
  * @Modified By:
  */
-public class RandomAccessFileLog extends FileLog {
+public class RandomAccessFileLog implements FileLog {
 
     private RandomAccessFile randomAccessFile;
     private String fileName;
@@ -33,5 +33,17 @@ public class RandomAccessFileLog extends FileLog {
                 e.printStackTrace();
             }
         });
+    }
+
+    public void close() {
+        if (randomAccessFile != null) {
+            try {
+                randomAccessFile.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                randomAccessFile = null;
+            }
+        }
     }
 }

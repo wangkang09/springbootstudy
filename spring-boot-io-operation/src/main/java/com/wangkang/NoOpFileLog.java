@@ -8,9 +8,14 @@ import java.nio.ByteBuffer;
  * @Date: Created in 20:41 2019/12/5
  * @Modified By:
  */
-public class NoOpFileLog extends FileLog {
+public class NoOpFileLog implements FileLog {
 
     @Override
     public void write(ByteBuffer byteBuffer){
+    }
+
+    @Override
+    public void close() {
+
     }
 }

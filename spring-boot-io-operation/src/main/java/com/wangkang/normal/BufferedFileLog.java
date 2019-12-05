@@ -17,7 +17,7 @@ import java.nio.ByteBuffer;
  * @Date: Created in 19:28 2019/12/5
  * @Modified By:
  */
-public class BufferedFileLog extends FileLog {
+public class BufferedFileLog implements FileLog {
 
     private BufferedOutputStream outputStream;
     private byte[] buffer;
@@ -29,7 +29,6 @@ public class BufferedFileLog extends FileLog {
         this.bufferSize = bufferSize;
         buffer = new byte[bufferSize];
         outputStream = new BufferedOutputStream(new FileOutputStream(fileName,true));
-        super.closeable = outputStream;
     }
 
     public BufferedFileLog(String fileName) throws FileNotFoundException {
@@ -37,7 +36,6 @@ public class BufferedFileLog extends FileLog {
         this.bufferSize = Util.pageSize() * 4;
         buffer = new byte[bufferSize];
         outputStream = new BufferedOutputStream(new FileOutputStream(fileName,true));
-        super.closeable = outputStream;
     }
 
     @Override
@@ -49,7 +47,18 @@ public class BufferedFileLog extends FileLog {
                 e.printStackTrace();
             }
         });
+    }
 
+    public void close() {
+        if (outputStream != null) {
+            try {
+                outputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                outputStream = null;
+            }
+        }
     }
 
 }

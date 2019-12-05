@@ -13,7 +13,7 @@ import java.nio.channels.FileChannel;
  * @Date: Created in 19:12 2019/12/5
  * @Modified By:
  */
-public class FileChannelLog extends FileLog {
+public class FileChannelLog implements FileLog {
 
     private FileChannel fileOutputChannel;
     private String fileName;
@@ -21,12 +21,23 @@ public class FileChannelLog extends FileLog {
     public FileChannelLog(String fileName) throws FileNotFoundException {
         this.fileName = fileName;
         fileOutputChannel = new FileOutputStream(fileName,true).getChannel();
-        super.closeable = fileOutputChannel;
     }
 
     @Override
     public void write(ByteBuffer byteBuffer) {
         //一个线程负责异步写文件
         FileLogManage.getExecutorService().submit(()->fileOutputChannel.write(byteBuffer));
+    }
+
+    public void close() {
+        if (fileOutputChannel != null) {
+            try {
+                fileOutputChannel.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                fileOutputChannel = null;
+            }
+        }
     }
 }
