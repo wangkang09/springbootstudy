@@ -26,4 +26,6 @@ public interface PersonService {
     int updateByExampleSelective(Person record, PersonExample example);
 
     int updateByExample(Person record, PersonExample example);
+    List<Person> selectByName0(String name);
+
 }

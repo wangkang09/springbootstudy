@@ -55,4 +55,9 @@ public class PersonServiceImpl implements PersonService {
     public int updateByExample(Person record, PersonExample example) {
         return personMapper.updateByExample(record,example);
     }
+
+    @Override
+    public List<Person> selectByName0(String name) {
+        return personMapper.selectByName0(name);
+    }
 }

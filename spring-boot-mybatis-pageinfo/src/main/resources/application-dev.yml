@@ -10,8 +10,3 @@
 ## https://blog.csdn.net/li_tianchang/article/details/81450849
 # https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
 # https://github.com/abel533/MyBatis-Spring-Boot
-
-
-spring:
-  profiles:
-    active:

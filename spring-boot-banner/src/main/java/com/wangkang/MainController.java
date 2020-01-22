@@ -1,6 +1,8 @@
 package com.wangkang;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,7 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
     @GetMapping("/banner")
-    public String test() {
+    public String test(User user,String dd) {
+        return "hello world";
+    }
+
+    @PostMapping("/banner")
+    public String testPost(@RequestBody  User user) {
         return "hello world";
     }
 }

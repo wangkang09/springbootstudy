@@ -52,4 +52,13 @@ public class PersonController {
         List<Person> ps = page.getResult();
         return page;
     }
+
+    @ResponseBody
+    @GetMapping("/person")
+    public List<Person> getPersonByName0(@RequestParam("name") String name) {
+        PersonExample personExample = new PersonExample();
+        PersonExample.Criteria criteria = personExample.createCriteria();
+        criteria.andNameEqualTo("admin");
+        return personService.selectByExample(personExample);
+    }
 }

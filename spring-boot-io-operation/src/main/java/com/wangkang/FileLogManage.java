@@ -41,6 +41,7 @@ public class FileLogManage {
     }
 
     private static FileLog getFileLog(String threadFileName) throws FileNotFoundException {
+
         return new BufferedFileLog(threadFileName);
     }
 
@@ -53,6 +54,7 @@ public class FileLogManage {
 
     }
 
+    //单独线程读
     public static ExecutorService getExecutorService() {
         return executorService;
     }

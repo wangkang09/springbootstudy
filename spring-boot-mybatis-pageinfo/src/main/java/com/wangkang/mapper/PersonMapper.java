@@ -22,4 +22,5 @@ public interface PersonMapper {
     int updateByExampleSelective(@Param("record") Person record, @Param("example") PersonExample example);
 
     int updateByExample(@Param("record") Person record, @Param("example") PersonExample example);
+    List<Person> selectByName0(@Param("name") String name);
 }

@@ -75,7 +75,19 @@ public class PersonController {
     @ResponseBody
     @GetMapping("/person0")
     public List<Person> getPersonByName0(String name) {
-        return personService.selectByName0(name);
+        try {
+            return personService.selectByName0(name);
+        } catch (Exception e) {
+            System.out.println("--------------------------->e.getMessage");
+            System.out.println(e.getMessage());
+            System.out.println("--------------------------->e.getLocalizedMessage");
+
+            System.out.println(e.getLocalizedMessage());
+            System.out.println("--------------------------->e.getCause");
+
+            System.out.println(e.getCause());
+            throw  e;
+        }
     }
 
     @PostMapping("/insert")

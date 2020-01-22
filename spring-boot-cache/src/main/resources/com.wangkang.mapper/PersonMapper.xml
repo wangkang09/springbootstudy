@@ -72,7 +72,7 @@
     select
     <include refid="Base_Column_List" />
     from person
-    WHERE name = #{name}
+    WHERE name1 = #{name}
   </select>
 
   <select id="selectByExample" parameterType="com.wangkang.entity.PersonExample" resultMap="BaseResultMap">
